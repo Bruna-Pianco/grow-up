@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- cabeçalho -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Grow Up">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Nome (text)
+      Email (email)
+      Telefone (tel)
+      Serviços  com opções Desenvolvimento Web, Marketing Digital, Consultoria UX (checkbox)
+      Urgência na entrega (radiobutton)
+      Descrição (textarea)
+      Adicione um link para pagina de orçamento no banner da Home.-->
+
+
+    <main>
+        <section>
+            <div class="container">
+                <h1>Solicite o seu orçamento:</h1>
+                <div class="orcamento">
+                    <form action="" method="post">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="text" name="nome" required>
+
+                        <label for="nome">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="nome">Telefone: </label>
+                        <input type="tel" id="telefone" name="telefone" required>
+
+                        <p><strong>Serviços:</strong></p>
+
+                        <input type="checkbox" name="Desenvolvimento" id="checkbox">
+                        <label for="assunto_desenvolvimento">Desenvolvimento Web</label>
+
+                        <input type="checkbox" name="Marketing" id="checkbox">
+                        <label for="checkbox">Marketing Digital</label>
+
+                        <input type="checkbox" name="Desenvolvimento" id="checkbox">
+                        <label for="assunto_ux">Consultoria UX</label>
+
+
+                        <p><strong>Urgência na entrega: ?</strong></p>
+
+                        <input type="radio" name="urgencia" id="urgencia_sim" value="sim">
+                        <label for="urgencia_sim">Sim</label>
+                        <input type="radio" name="urgencia" id="urgencia_nao" value="não">
+                        <label for="urgencia_nao">Não</label>
+                        <br><br>
+                            <label for="mensagem">Descrição:</label>
+                        <br>    
+                            <textarea name="descricao" id="descricao" cols="30" rows="10" required></textarea>
+                        <br>
+                            <button type="submit">Enviar</button>
+
+                    </form>
+                </div>
+            </div> 
+        </section>
+    </main>
+    <footer>
+        <!-- rodapé -->
+        <p>copyright - Grow Up </p>
+    </footer>
+</body>
+
+</html>
